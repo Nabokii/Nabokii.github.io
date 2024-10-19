@@ -1,0 +1,11 @@
+body {
+    color: lightgray;
+}
+
+.firstColour {
+    background-color: black;
+}
+
+.changeColour {
+    background-color: white;
+}
