@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
@@ -16,12 +17,32 @@
             <p id="subtitle">10001101010100101110100111000011101000110110001111010010111101010001111010101010100101010110101010101010101110100101101</p>
         </div>
         <div id="iconHeader">
-            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+            <span class="icon" id="openingIcon" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
         </div>
     </div>
     <div id="sidebar">
-    <a>Source Review</a>
+        <span class="icon" id="closingIcon" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+        <div id="flex">
+            <a>Source Review</a>
+            <a>Discussion</a>
+        </div>
     </div>
+    <div id="abstract">
+        <h4>Abstract</h4>
+        <div id="abstractContent">
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+            <p class="abstract">This is my abstract</p>
+        </div>
+    </div>
+    <p id="temp">bgfeuwfhueiw</p>
     <script src="index.js"></script>
 </body>
 </html>

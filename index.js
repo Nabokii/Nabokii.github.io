@@ -4,6 +4,8 @@ let desiredTitleText = "The double-edged sword of AI's influence on human societ
 let subtitle = document.getElementById("subtitle")
 let subtitleText = subtitle.textContent
 let desiredSubtitleText = "(Welcome to the website I made for the EPQ. Look around and enjoy the many hours of effort that went into this project)"
+let showing = 0
+let sidebar = document.getElementById("sidebar")
 
 function changeCharacter(old, notOld, DOMelement, speed) {
     let currentIndex = 0
@@ -27,4 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30)
     }, 4700)
+})
+
+document.addEventListener("scroll", function() {
+    document.getElementById("abstract").classList.add("fadeIn")
+})
+
+document.getElementById("openingIcon").addEventListener("click", function() {
+    sidebar.classList.remove("slideOut")
+    sidebar.classList.add("slideIn")
+})
+
+document.getElementById("closingIcon").addEventListener("click", function() {
+    sidebar.classList.remove("slideIn")
+    sidebar.classList.add("slideOut")
 })
