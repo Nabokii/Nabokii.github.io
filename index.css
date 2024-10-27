@@ -3,7 +3,7 @@
 body {
     color: green;
     text-align: center;
-    background-color: #c0c0c0;
+    background-color: #2C2C2C;
     padding: 0;
     margin: 0;
 }
@@ -12,6 +12,7 @@ body {
     margin-bottom: 0;
     padding: 0;
     text-align: left;
+    font-size: 24px;
 }
 
 #subtitle {
@@ -32,7 +33,7 @@ body {
     margin: 0;
     padding-bottom: 10px;
     padding: 30px;
-    box-shadow: 0px 10px 10px 5px grey;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.2);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -58,6 +59,11 @@ body {
     box-sizing: border-box;
     float: left;
     background-color: black;
+    text-align: left;
+}
+
+#mainHeader h2 {
+    font-size: 24px;
 }
 
 #sidebar {
@@ -71,7 +77,7 @@ body {
     width: 30%;
     height: 100%;
     box-sizing: border-box;
-    margin-top: -150px;
+    margin-top: -200px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 150px;
@@ -111,14 +117,20 @@ a {
     cursor: pointer;
 }
 
+.icon:hover {
+    fill: green;
+}
+
 #temp {
     margin-top: 600px;
     visibility: hidden;
 }
 
 h4 {
-    color: black;
+    color: green;
     font-size: 20px;
+    margin-top: -50px;
+    font-style: bold;
 }
 
 #abstract {
@@ -138,6 +150,41 @@ h4 {
     animation: fadeInAnim 0.5s forwards;
 }
 
+.mainContent{
+    color: whitesmoke;
+    line-height: 20px;
+}
+
+sup {
+    margin: 0;
+    line-height: 0;
+}
+
+.mainSection {
+    margin: 100px;
+}
+
+.multipleh4 {
+    margin-top: 70px;
+}
+
+.mainContent span {
+    font-style: italic;
+}
+
+#citationDiv {
+    border-left: lightgrey 2px solid;
+    font-size: 9px;
+    margin-top: 70px;
+    color: lightgrey;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: -50px;
+}
+
+.citation {
+    margin: 2px;
+}
 
 /*Animations*/
 

@@ -35,12 +35,12 @@ document.addEventListener("scroll", function() {
     document.getElementById("abstract").classList.add("fadeIn")
 })
 
-document.getElementById("openingIcon").addEventListener("click", function() {
+function showSidebar() {
     sidebar.classList.remove("slideOut")
     sidebar.classList.add("slideIn")
-})
+}
 
-document.getElementById("closingIcon").addEventListener("click", function() {
+function hideSidebar() {
     sidebar.classList.remove("slideIn")
     sidebar.classList.add("slideOut")
-})
+}
