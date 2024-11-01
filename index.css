@@ -6,9 +6,20 @@ body {
     background-color: #2C2C2C;
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 #title {
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 24px;
+}
+
+#title-alt {
     margin-bottom: 0;
     padding: 0;
     text-align: left;
@@ -110,6 +121,22 @@ a {
     font-weight: 400;
     font-style: normal;
     margin-top: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+.currentPage {
+    color: grey;
+}
+
+.currentPage:hover {
+    text-decoration: none;
+    cursor: default;
+    color: grey;
 }
 
 .icon {

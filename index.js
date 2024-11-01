@@ -1,11 +1,11 @@
+let sidebar = document.getElementById("sidebar")
 let title = document.getElementById("title")
 let titleText = title.textContent
 let desiredTitleText = "The double-edged sword of AI's influence on human society" //57
 let subtitle = document.getElementById("subtitle")
 let subtitleText = subtitle.textContent
-let desiredSubtitleText = "(Welcome to the website I made for the EPQ. Look around and enjoy the many hours of effort that went into this project)"
+let desiredSubtitleText = "Website by [redacted]"
 let showing = 0
-let sidebar = document.getElementById("sidebar")
 
 function changeCharacter(old, notOld, DOMelement, speed) {
     let currentIndex = 0
@@ -29,11 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30)
     }, 4700)
+    setTimeout(function() {
+        document.getElementById("abstract").classList.add("fadeIn")
+    }, 6000)
 })
 
-document.addEventListener("scroll", function() {
+/*document.addEventListener("scroll", function() {
     document.getElementById("abstract").classList.add("fadeIn")
-})
+})*/
 
 function showSidebar() {
     sidebar.classList.remove("slideOut")
