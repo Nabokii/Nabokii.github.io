@@ -33,6 +33,13 @@ body {
     font-size: 12px;
 }
 
+#sutitle-alt {
+    margin-top: 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
 .red {
     color: red;
     font-family: fantasy;
@@ -98,6 +105,21 @@ body {
     display: flex;
     flex-direction: column;
     place-content: space-between;
+}
+
+.flex-alt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-alt div {
+    margin: 20px;
+}
+
+.div1 {
+    border-right: grey solid 5px;
+    padding-right: 30px;
 }
 
 .hidden {
@@ -216,6 +238,12 @@ sup {
 
 .citation {
     margin: 2px;
+}
+
+.span {
+    color: lightgreen;
+    text-decoration: underline;
+    font-style: normal;
 }
 
 /*Animations*/
