@@ -34,10 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 6000)
 })
 
-/*document.addEventListener("scroll", function() {
-    document.getElementById("abstract").classList.add("fadeIn")
-})*/
-
 function showSidebar() {
     sidebar.classList.remove("slideOut")
     sidebar.classList.add("slideIn")
