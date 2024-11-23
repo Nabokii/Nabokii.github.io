@@ -26,6 +26,19 @@ body {
     font-size: 24px;
 }
 
+#intro {
+    margin-top: 100px;
+}
+
+img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: -10px;
+    width: 60px;
+}
+
 #subtitle {
     margin-top: 0px;
     padding: 0;
@@ -73,7 +86,7 @@ body {
     height: 90px;
     padding: 10px;
     padding-top: 0;
-    width: 95%;
+    width: 90%; /*95*/
     box-sizing: border-box;
     float: left;
     background-color: black;
@@ -177,9 +190,10 @@ a:hover {
 
 h4 {
     color: green;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: -50px;
     font-style: bold;
+    text-decoration: underline;
 }
 
 #abstract {
@@ -211,6 +225,8 @@ sup {
 
 .mainSection {
     margin: 100px;
+    width: 70%;
+    margin-left: 10%;
 }
 
 .multipleh4 {
@@ -245,6 +261,8 @@ sup {
     text-decoration: underline;
     font-style: normal;
 }
+
+
 
 /*Animations*/
 
