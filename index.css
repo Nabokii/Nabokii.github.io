@@ -12,6 +12,8 @@ body {
     font-style: normal;
 }
 
+/*Header*/
+
 #title {
     margin-bottom: 0;
     padding: 0;
@@ -24,10 +26,6 @@ body {
     padding: 0;
     text-align: left;
     font-size: 24px;
-}
-
-#intro {
-    margin-top: 100px;
 }
 
 img {
@@ -51,11 +49,6 @@ img {
     padding: 0;
     text-align: left;
     font-size: 12px;
-}
-
-.red {
-    color: red;
-    font-family: fantasy;
 }
 
 #header {
@@ -97,6 +90,8 @@ img {
     font-size: 24px;
 }
 
+/*Sidebar*/
+
 #sidebar {
     background-color: #130b17;
     z-index: 1000;
@@ -120,48 +115,10 @@ img {
     place-content: space-between;
 }
 
-.flex-alt {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.flex-alt div {
-    margin: 20px;
-}
-
-.div1 {
-    border-right: grey solid 5px;
-    padding-right: 30px;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.shown {
-    visibility: visible;
-}
-
 #sidebar span {
     position: absolute;
     right: 40px;
     top: 40px;
-}
-
-a {
-    color: green;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 30px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightgreen;
-    text-decoration: underline;
 }
 
 .currentPage {
@@ -183,39 +140,26 @@ a:hover {
     fill: green;
 }
 
-#temp {
-    margin-top: 600px;
-    visibility: hidden;
+/*Source review page*/
+
+.div1 {
+    border-right: grey solid 5px;
+    padding-right: 30px;
 }
 
-h4 {
+a {
     color: green;
-    font-size: 25px;
-    margin-top: -50px;
-    font-style: bold;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgreen;
     text-decoration: underline;
-}
-
-#abstract {
-    opacity: 0;
-    text-align: center;
-}
-
-.slideIn {
-    animation: slideInAnim 0.5s forwards;
-}
-
-.slideOut {
-    animation: slideOutAnim 0.5s forwards;
-}
-
-.fadeIn {
-    animation: fadeInAnim 0.5s forwards;
-}
-
-.mainContent{
-    color: whitesmoke;
-    line-height: 20px;
 }
 
 sup {
@@ -223,18 +167,14 @@ sup {
     line-height: 0;
 }
 
-.mainSection {
-    margin: 100px;
-    width: 70%;
-    margin-left: 10%;
+.flex-alt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.multipleh4 {
-    margin-top: 70px;
-}
-
-.mainContent span {
-    font-style: italic;
+.flex-alt div {
+    margin: 20px;
 }
 
 #citationDiv {
@@ -263,8 +203,65 @@ sup {
 }
 
 
+/*Main page*/
+
+#intro {
+    margin-top: 130px;
+}
+
+h4 {
+    color: green;
+    font-size: 25px;
+    margin-top: -50px;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+#abstract {
+    opacity: 0;
+    text-align: center;
+}
+
+.mainContent{
+    color: whitesmoke;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.mainSection {
+    margin: 100px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.mainContent span {
+    font-style: italic;
+}
+
+
+
 
 /*Animations*/
+
+.hidden {
+    visibility: hidden;
+}
+
+.shown {
+    visibility: visible;
+}
+
+.slideIn {
+    animation: slideInAnim 0.5s forwards;
+}
+
+.slideOut {
+    animation: slideOutAnim 0.5s forwards;
+}
+
+.fadeIn {
+    animation: fadeInAnim 0.5s forwards;
+}
 
 @keyframes slideInAnim {
     0% {
