@@ -79,7 +79,7 @@ img {
     height: 90px;
     padding: 10px;
     padding-top: 0;
-    width: 93%; /*95*/
+    width: 90%; /*95*/
     box-sizing: border-box;
     float: left;
     background-color: black;
@@ -94,6 +94,7 @@ img {
 
 #sidebar {
     background-color: #130b17;
+    border: black solid 2px;
     z-index: 1000;
     color: green;
     font-size: 20px;
@@ -231,7 +232,7 @@ h4 {
 .mainSection {
     margin: 100px;
     width: 60%;
-    /*margin-left: 20%;*/
+    margin-left: 23%;
 }
 
 .mainContent span {
