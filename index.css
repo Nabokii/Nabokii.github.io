@@ -79,7 +79,7 @@ img {
     height: 90px;
     padding: 10px;
     padding-top: 0;
-    width: 90%; /*95*/
+    width: 93%; /*95*/
     box-sizing: border-box;
     float: left;
     background-color: black;
@@ -231,11 +231,16 @@ h4 {
 .mainSection {
     margin: 100px;
     width: 60%;
-    margin-left: 20%;
+    /*margin-left: 20%;*/
 }
 
 .mainContent span {
     font-style: italic;
+}
+
+#evenMoreMain {
+    text-align: center;
+    width: 100%;
 }
 
 
