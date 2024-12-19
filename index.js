@@ -31,10 +31,10 @@ function changeCharacter(old, notOld, DOMelement, speed) {
 //All the things that happen when the website first loads
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
-        changeCharacter(titleText, desiredTitleText, title, 60)
+        changeCharacter(titleText, desiredTitleText, title, 60) //60
     }, 1000)
     setTimeout(function() {
-        changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30)
+        changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30) //30
     }, 4700)
     setTimeout(function() {
         document.getElementById("abstract").classList.add("fadeIn")
