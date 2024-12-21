@@ -52,3 +52,4 @@ function hideSidebar() {
     sidebar.classList.remove("slideIn")
     sidebar.classList.add("slideOut")
 }
+
