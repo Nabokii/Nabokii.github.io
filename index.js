@@ -53,3 +53,6 @@ function hideSidebar() {
     sidebar.classList.add("slideOut")
 }
 
+function moveTo() {
+    //nothing yet :/
+}
