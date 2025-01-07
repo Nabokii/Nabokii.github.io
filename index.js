@@ -53,6 +53,10 @@ function hideSidebar() {
     sidebar.classList.add("slideOut")
 }
 
+//Function to go down the page
 function moveTo() {
-    //nothing yet :/
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        })
 }
