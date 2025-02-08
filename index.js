@@ -63,7 +63,7 @@ function moveTo() {
 
 document.addEventListener('scroll', function() {
     if (window.location.href = "http://sourceReview.html") {
-        document.getElementsByClassName("citationDiv").classList.add("fadeIn")
+        setTimeout(document.getElementsByClassName("citationDiv").classList.add("fadeIn"), 2000)
     }
 })
 
