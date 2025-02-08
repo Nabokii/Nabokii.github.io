@@ -282,6 +282,10 @@ li {
     visibility: hidden;
 }
 
+.hidden2 {
+    opacity: 0;
+}
+
 .shown {
     visibility: visible;
 }
