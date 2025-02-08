@@ -55,8 +55,11 @@ function hideSidebar() {
 
 //Function to go down the page
 function moveTo() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth"
-        })
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    })
+
+    document.getElementById("test").textContent = event.target.id
+
 }
