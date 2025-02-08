@@ -59,7 +59,11 @@ function moveTo() {
         top: document.body.scrollHeight,
         behavior: "smooth"
     })
-
-    document.getElementById("test").textContent = event.target.id
-
 }
+
+document.addEventListener('scroll', function() {
+    if (window.location.href = "http://sourceReview.html") {
+        document.getElementsByClassName("citationDiv").classList.add("fadeIn")
+    }
+})
+
