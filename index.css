@@ -276,6 +276,11 @@ li {
 }
 
 
+#evaluation {
+    width: 70%;
+}
+
+
 /*Animations*/
 
 .hidden {
