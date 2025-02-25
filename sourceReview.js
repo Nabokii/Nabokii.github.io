@@ -1,3 +1,6 @@
 document.addEventListener('scroll', function() {
-    setTimeout(document.getElementsByClassName("citationDiv").classList.add("fadeIn"), 2000)
+    setTimeout(function() {
+        document.getElementsByClassName("citationDiv").classList.add("fadeIn")
+        document.getElementsByClassName("citationDiv").classList.remove("hidden2")
+    }, 2000)
 })
