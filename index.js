@@ -60,10 +60,3 @@ function moveTo() {
         behavior: "smooth"
     })
 }
-
-document.addEventListener('scroll', function() {
-    if (window.location.href = "http://sourceReview.html") {
-        setTimeout(document.getElementsByClassName("citationDiv").classList.add("fadeIn"), 2000)
-    }
-})
-
