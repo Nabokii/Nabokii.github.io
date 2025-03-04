@@ -70,6 +70,17 @@ function moveTo() {
     })
 }
 
+function popup() {
+    if (event.target.id == "light") {
+        localStorage.setItem("mode", "light")
+    }
+
+    else {
+        localStorage.setItem("mode", "dark")
+    }
+}
+
+
 windows.addEventListener("beforeUnload", function() {
     localStorage.setItem("hasAnimationRun", "false")
 })

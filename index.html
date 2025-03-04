@@ -4,7 +4,7 @@
     <!--Title, fonts, icons etc.-->
     <meta charset="UTF-8" />
     <title>EPQ Website</title>
-    <link rel="stylesheet" href="index.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=warning" />
@@ -41,6 +41,11 @@
         </div>
     </div>
     <div id="abstract" class="mainSection">
+        <div id="popup">
+            <p>Which mode would you like to use? (Choose wisely because this will be saved for future site visits)</p>
+            <button onclick="popup()" id="dark">Dark Mode</button>
+            <button onclick="popup()" id="light">Light Mode</button>
+        </div>
         <div id="abstractContent">
             <h4>Abstract</h4>
             <p class="mainContent">This study, presented as a website, examines the role of artificial intelligence (AI) in human society, weighing its potential benefits and drawbacks. Firstly, the discussion explores the positives and the sectors in society where using AI would be useful, drawing attention to things such as enhanced problem solving and technological advances. These points are then contrasted with the concerns of using AI, including safety, bias, and privacy. The research then concludes that AI can be a valuable tool with the correct precautions while offering suggestions to mitigate associated risks and maximise societal benefits.</p>
