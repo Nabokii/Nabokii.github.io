@@ -6,7 +6,6 @@ let desiredTitleText = "The double-edged sword of AI's influence on human societ
 let subtitle = document.getElementById("subtitle")
 let subtitleText = subtitle.textContent
 let desiredSubtitleText = "Website by [redacted]"
-let showing = 0
 
 //Function for the fancy little animation of the title and subtitle in the header
 function changeCharacter(old, notOld, DOMelement, speed) {
@@ -26,19 +25,35 @@ function changeCharacter(old, notOld, DOMelement, speed) {
             clearInterval(interval);
         }
     }, speed);
+
+    localStorage.setItem("hasAnimationRun", "true")
 }
 
 //All the things that happen when the website first loads
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        changeCharacter(titleText, desiredTitleText, title, 60) //60
-    }, 1000)
-    setTimeout(function() {
-        changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30) //30
-    }, 4700)
-    setTimeout(function() {
-        document.getElementById("abstract").classList.add("fadeIn")
-    }, 6000)
+    if (localStorage.getItem("hasAnimationRun") === "true") {
+        setTimeout(function() {
+            changeCharacter(titleText, desiredTitleText, title, 1) //60
+        }, 1)
+        setTimeout(function() {
+            changeCharacter(subtitleText, desiredSubtitleText, subtitle, 1) //30
+        }, 1)
+        setTimeout(function() {
+            document.getElementById("abstract").classList.add("fadeIn")
+        }, 1)
+    }
+
+    else {
+        setTimeout(function() {
+            changeCharacter(titleText, desiredTitleText, title, 60) //60
+        }, 1000)
+        setTimeout(function() {
+            changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30) //30
+        }, 4700)
+        setTimeout(function() {
+            document.getElementById("abstract").classList.add("fadeIn")
+        }, 6000)
+    }
 })
 
 //Function to slide the sidebar in when icon is clicked
@@ -60,3 +75,7 @@ function moveTo() {
         behavior: "smooth"
     })
 }
+
+windows.addEventListener("beforeUnload", function() {
+    localStorage.setItem("hasAnimationRun", "false")
+})
