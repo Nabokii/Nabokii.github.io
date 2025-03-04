@@ -93,7 +93,7 @@ img {
 /*Sidebar*/
 
 #sidebar {
-    background-color: #130b17;
+    background-color: rgb(29, 31, 31) /*#130b17*/;
     border: black solid 2px;
     z-index: 1000;
     color: green;
@@ -107,7 +107,8 @@ img {
     margin-top: -200px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 150px;
+    padding-top: 80px;
+    border-radius: 20px;
 }
 
 #flex {
@@ -120,6 +121,10 @@ img {
     position: absolute;
     right: 40px;
     top: 40px;
+}
+#sidebar a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4){
+    border-bottom: solid 1px;
+    padding-bottom: 30px;
 }
 
 .currentPage {
