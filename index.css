@@ -289,6 +289,9 @@ li {
 
 #evaluation {
     width: 70%;
+    margin-left: 15%;
+    padding: 30px;
+    border-left: green solid 1.5px; border-right: green solid 1.5px;
 }
 
 
