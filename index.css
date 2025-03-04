@@ -70,7 +70,7 @@ img {
     padding: 10px;
     margin: 0;
     float: left;
-    background-color: black;
+    background-color: none;
     height: 90px;
     box-sizing: border-box;
 }
@@ -79,7 +79,7 @@ img {
     height: 90px;
     padding: 10px;
     padding-top: 0;
-    width: 90%; /*95*/
+    width: 85%; /*95*/
     box-sizing: border-box;
     float: left;
     background-color: black;
@@ -88,6 +88,12 @@ img {
 
 #mainHeader h2 {
     font-size: 24px;
+}
+
+@media (min-width: 1080px) {
+    #mainHeader {
+        width: 90%;
+    }
 }
 
 /*Sidebar*/
@@ -111,7 +117,7 @@ img {
     border-radius: 20px;
 }
 
-#flex {
+.flex {
     display: flex;
     flex-direction: column;
     place-content: space-between;
