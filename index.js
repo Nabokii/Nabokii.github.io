@@ -32,15 +32,9 @@ function changeCharacter(old, notOld, DOMelement, speed) {
 //All the things that happen when the website first loads
 document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem("hasAnimationRun") === "true") {
-        setTimeout(function() {
-            changeCharacter(titleText, desiredTitleText, title, 1) //60
-        }, 1)
-        setTimeout(function() {
-            changeCharacter(subtitleText, desiredSubtitleText, subtitle, 1) //30
-        }, 1)
-        setTimeout(function() {
-            document.getElementById("abstract").classList.add("fadeIn")
-        }, 1)
+        title.textContent = desiredTitleText
+        subtitle.textContent = desiredSubtitleText
+        document.getElementById("abstract").setAttribute.opacity = "1"
     }
 
     else {
