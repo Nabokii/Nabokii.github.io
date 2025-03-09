@@ -12,6 +12,32 @@ body {
     font-style: normal;
 }
 
+.container {
+    opacity: 0.2;
+}
+
+#popup {
+    width: 40%;
+    background-color: black;
+    padding: 5%;
+    position: absolute;
+    z-index: 1000;
+    left: 30%;
+    opacity: 1;
+    color: white;
+    margin-top: 200px;
+    box-shadow: 2px 2px 10px black;
+}
+
+button {
+    background-color: green;
+    border: 0;
+    padding: 10px;
+    color: lightgrey;
+    border-radius: 20px;
+}
+
+
 /*Header*/
 
 #title {
@@ -64,6 +90,7 @@ img {
     font-style: normal;
     margin-bottom: 50px;
 }
+
 
 #iconHeader {
     width: 5%;
@@ -307,6 +334,10 @@ li {
 
 .shown {
     visibility: visible;
+}
+
+.shown2 {
+    opacity: 1;
 }
 
 .slideIn {

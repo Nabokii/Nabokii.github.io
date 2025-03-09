@@ -26,18 +26,17 @@ function changeCharacter(old, notOld, DOMelement, speed) {
         }
     }, speed);
 
-    localStorage.setItem("hasAnimationRun", "true")
+    sessionStorage.setItem("hasAnimationRun", "true")
 }
 
-//All the things that happen when the website first loads
-document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem("hasAnimationRun") === "true") {
+function check() {
+    if (sessionStorage.getItem("hasAnimationRun") === "true") {
         title.textContent = desiredTitleText
         subtitle.textContent = desiredSubtitleText
-        document.getElementById("abstract").setAttribute.opacity = "1"
+        document.getElementById("abstract").classList.add("fadeIn")
     }
 
-    else {
+    else if (sessionStorage.getItem("hasAnimationRun") === "false" || sessionStorage.getItem("hasAnimationRun") === null) {
         setTimeout(function() {
             changeCharacter(titleText, desiredTitleText, title, 60) //60
         }, 1000)
@@ -48,6 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("abstract").classList.add("fadeIn")
         }, 6000)
     }
+}
+
+//All the things that happen when the website first loads
+document.addEventListener('DOMContentLoaded', function() {
+    check()
 })
 
 //Function to slide the sidebar in when icon is clicked
@@ -70,6 +74,18 @@ function moveTo() {
     })
 }
 
+
+/*if (localStorage.getItem("mode") == null){
+    document.getElementById("popup").classList.remove("hidden")
+    document.getElementById("container").classList.add("container")
+}
+
+else if (localStorage.getItem("mode") != null) {
+    document.getElementById("popup").classList.add("hidden")
+    document.getElementById("container").classList.remove("container")
+    
+}
+
 function popup() {
     if (event.target.id == "light") {
         localStorage.setItem("mode", "light")
@@ -78,9 +94,21 @@ function popup() {
     else {
         localStorage.setItem("mode", "dark")
     }
+
+    document.getElementById("popup").classList.add("hidden")
+    document.getElementById("container").classList.remove("container")
+
+    setTimeout(function() {
+        changeCharacter(titleText, desiredTitleText, title, 60) //60
+    }, 1000)
+    setTimeout(function() {
+        changeCharacter(subtitleText, desiredSubtitleText, subtitle, 30) //30
+    }, 4700)
+    setTimeout(function() {
+        document.getElementById("abstract").classList.add("fadeIn")
+    }, 6000)
 }
 
-
-windows.addEventListener("beforeUnload", function() {
-    localStorage.setItem("hasAnimationRun", "false")
-})
+if (localStorage.getItem("mode") == "light") {
+    document.getElementById("")
+}*/
